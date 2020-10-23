@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Cache-Control" content="no-transform">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>让我帮你百度一下 | Let Me Baidu That For You</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/style.css" />	
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js"></script>
+    <script src="js/base64.min.js"></script>
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+    <section id="search">
+        <div class="search-header">
+            <h2>
+                <span class="let-me">让我帮你</span>
+                <img src="img/baidu_logo.png" alt="百度" title="让我帮你百度一下">
+                <span class="for-you">一下</span>
+            </h2>
+        </div>
+        <form id="search-form">
+            <div class="search-form-group">
+                <div class="search-form-input">
+                    <input type="search" id="kw" maxlength="255" autocomplete="off" required>
+                </div>
+                <button id="search-submit">百度一下</button>
+            </div>
+        </form>
+    </section>
+    <section id="function">
+        <p id="tips">输入一个问题，然后点击百度一下</p>
+        <button id="stop">快停下！我是自己人</button>
+        <div id="output">
+            <textarea id="url-output" rows="3" readonly></textarea>
+            <div class="tool-btns">
+                <button data-clipboard-target="#url-output">复制</button>
+                <button id="preview">预览</button>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <ul class="footer-left">
+            <li>
+                <a href="https://github.com/ShunCai/Lmstfy" target="_blank">
+                    <img src="https://github.com/favicon.ico">
+                </a>
+            </li>
+        </ul>
+        <ul class="footer-right">
+            <li>* 本站与百度公司没有任何联系，<a target="_blank" href="https://www.baidu.com">Baidu</a> 以及本站出现的百度公司 Logo 是百度公司的商标</li>
+        </ul>
+    </footer>
+
+    <div id="arrow"></div>
+</body>
+
+</html>
